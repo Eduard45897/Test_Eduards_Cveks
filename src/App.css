@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.data {
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+.data p {
+  display: inline-block;
+  vertical-align: top;
+  width: 10px;
+  margin: 0 10px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.period {
+  display: inline-block;
+  font-size: 20px;
+}
+.datePicker {
+  padding: 5px 5px 5px 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEX///8AAADl5eViYmKsrKzr6+sdHR2VlZWPj4+oqKjJycnd3d1aWlp2dnY1NTXh4eFPT0/Dw8O2trY6OjomJib5+fmIiIgICAjz8/NwcHCfn59DQ0O9vb3Q0NAUFBQsLCyAgIAWd2rVAAAEMElEQVR4nO2da2OiMBBFkWcrKhblIYr6/3/ltm4fzB23rIXKpL3nI2NITishQyLxvD7CmSTvLTESOVQcjnBOyowBZXqgzBhQpgfKjMF3yOA5DyOc8784jPBXLOo6zcPHN8IdnHOZP96FfAkV7zqNytO6LnpNonmymTnBJplHn/kUbbOfuo23sG/af+qkyWrq5t3KKkmvuzTrqZv2FdbNFZWonLpZX6WM0CXDTsshdhlcLoupWzSEhbhw/GDq9gwj8D9carw/Ocey/ujHpm7LcN77tKd46qYMJ3567ZQd7sg+2P3toHF06iiX0XztdK/8weKlD2inbsVYtM8y14YxQXOYv9JiPGnnd6FNoOLyveJDc+2+WD4P+yt1dOF3Ex/MNCdLmzsVF7WvL46q8LJrhl2sPgPQ36hMtRVdzMpom1AdWuGA2qxMhKlk6WFGptpqVkZ9YO1t4UiLRezK4E1l6x3lgb3Kqe3KpPD05ehBz7zwsYhdGeyeKw9KBC7J4K2TMveBMpS5A98iU227HO83P3MUFVdjyKRh3iXM8APfRQYVq9v5F2TsQhmrUMYqlLEKZazSK7NTs512UdMXKLMvE2cocQUGyjgNZaxCGatQxiqUsQplrEIZq/xomSp2CFyPofKZJnQGtaJcpc0uZZq/6hkAZSaCMlahjFUoYxXKWIUyVqGMVW6VwbkpWL+i564gDguN15gtQXGct0sxPkgGf4yGMhhHGVgSuuiRWfbILClDGcpQhjKUoQxlKPNDZPpGzXeWGTZqftivu2xg7XyEcXinTbQU4TU2ttiI8P4B4hnGB8n4qQQaW2Dcg3gmwxm+wAeK+3h+jA+SMQ1lrEIZq1DGKpSxCmWsQhmr/GqZKBNgCqDiEC58GcchvpfKOOZuxafxW2XK06pLhclZuRXxI7oGovxJrWY7iuJbfItkVon4Sb7g51c/A6AMZShDGcpQhjKUoQxlvkXmHIsxuJI5yxRAyQQivlUpwEymAGclI+LxeZCMaShjFcpYhTJWoYxVKGMVyliFMla5VSZ9EhxqeboC41BdMZfxOc7PHGRczf+MKlOuNl1iNT8j41uoLtqJ+Eq9124riq/0Ll9jykycNlOGMpShDGUoQxnKUOanykz8+5lxZZJAgJsg1Q3Eobq6lPES8iFvIeMNxkeVMQ1lrEIZq1DGKpSxipaBXRs3apsnu6Qb2fajdwI7tZ+mXXA/zZOHu+w2Nz3unZIC95tfqD1oT3fbx2woGX6pSrVp3Sy4aeQ6HbXaiDr3fDw0w3G8UfQu1L5XxOrg6W57GX6dHL9js1n8fLXjluIX9ucHw5zxrdMXEk8vHXSWlztkjXm+o+wuHddc70PvINX8ci3V56kbMgbn1ztKe/V6cov92zCsCHX37Bhx+D4KK3BM4xxlZ0SphwZuIYdghdM2wev/5Q+nBKpP9LCUogAAAABJRU5ErkJggg==")
+    no-repeat center right 10%;
+  background-size: auto 60%;
+}
+.active-tab {
+  color: red;
+  font-weight: bold;
+  border: none;
+  margin-top: 10px;
+}
+
+.inactive-tab {
+  background-color: rgb(187, 233, 251);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.inactive-tab:hover {
+  background-color: skyblue;
+}
+.tableFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(175, 166, 166);
+  padding: 10px;
+  padding-right: 50px;
+  background-color: rgb(216, 243, 255);
+}
+.countryInput {
+  border: 1px solid #000;
+  padding: 5px 5px 5px 5px;
+  background: url("https://st3.depositphotos.com/32486682/33517/v/450/depositphotos_335178020-stock-illustration-flat-magnifier-icon-with-lens.jpg")
+    no-repeat center right;
+  background-size: auto 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 20px 5px 5px 20px;
+}
+.input-wrapper {
+  display: inline-block;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 20px 5px 5px 20px;
+}
+.valueFrom {
+  border: 1px solid #000;
+  padding: 5px 5px 5px 5px;
+  margin: 20px 5px 5px 20px;
+}
+.valueTo {
+  border: 1px solid #000;
+  padding: 5px 5px 5px 5px;
+  margin: 20px 5px 5px 20px;
+}
+.reset {
+  padding: 5px 5px 5px 5px;
+  margin-left: 10px;
+  margin: 20px 5px 5px 20px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.reset:hover {
+  background-color: rgb(225, 234, 253);
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+thead {
+  background-color: rgb(251, 233, 147);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(2n) {
+  background-color: rgb(225, 225, 225);
+}
+tbody > tr:nth-of-type(2n + 1) {
+  background-color: rgb(255, 255, 255);
+}
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-row {
+  border: 2px solid black;
+}
+
+.data-row td {
+  padding: 8px;
+}
+
+.data-row th {
+  padding: 8px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  border: 1px solid grey;
+  width: 150px;
+}
+
+.menu > li {
+  margin: 0;
+  background-color: white;
+}
+
+.menu > li:hover {
+  background-color: lightgray;
+}
+
+.menu > li > button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.pagination {
+  position: inherit;
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  margin-left: 70%;
+}
+.centered-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: red;
+}
+.chartDropdownWrapper {
+  position: relative;
+  display: flex;
+  margin: 20px 5px 5px 20px;
+  align-items: center;
+}
+
+.country {
+  margin-right: 20px; 
+}
+
